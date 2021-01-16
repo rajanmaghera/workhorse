@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { InitialNavigation } from '@angular/router';
 
 @Component({
   selector: 'app-employee',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./employee.component.scss']
 })
 export class EmployeeComponent implements OnInit {
+  @Input() name: string;
+  @Input() phone: number;
+  @Input() email: string;
 
   constructor() { }
 
