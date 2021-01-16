@@ -13,6 +13,8 @@ import { NbSidebarModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.component';
 import { NbButtonModule } from '@nebular/theme';
+import { NbMenuModule } from '@nebular/theme';
+import { EmployeePageComponent } from './employee-page/employee-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { NbButtonModule } from '@nebular/theme';
     EmployeeComponent,
     ManagerComponent,
     TimetableComponent,
-    NbSidebarToggleComponent
+    NbSidebarToggleComponent,
+    EmployeePageComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { NbButtonModule } from '@nebular/theme';
     NbEvaIconsModule,
     NbIconModule,
     NbButtonModule,
+    NbMenuModule.forRoot(),
     NbSidebarModule.forRoot(),
     AppRoutingModule
   ],
