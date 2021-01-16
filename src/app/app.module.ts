@@ -9,14 +9,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbIconModule } from '@nebular/theme';
+import { NbSidebarModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
+import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.component';
+import { NbButtonModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     ManagerComponent,
-    TimetableComponent
+    TimetableComponent,
+    NbSidebarToggleComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,8 @@ import { AppRoutingModule } from './app-routing.module';
     NbLayoutModule,
     NbEvaIconsModule,
     NbIconModule,
+    NbButtonModule,
+    NbSidebarModule.forRoot(),
     AppRoutingModule
   ],
   providers: [],
