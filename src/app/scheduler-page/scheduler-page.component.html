@@ -1,1 +1,35 @@
-<p>scheduler-page works!</p>
+<div>
+
+    <div class="row">
+        <div class="col-12">
+            <h1>Choose your Availability</h1>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-12">
+            <nb-card>
+                <nb-card-body>
+                    <nb-list>
+                        <nb-list-item style="font-weight: bold;">
+                            <span style="width: 20%;">Hours</span>
+                            <span style="text-align: center; width: 14%;"*ngFor="let day of weekdays">{{ day }}</span>
+                        </nb-list-item>
+                        <nb-list-item *ngFor="let item of times">
+                            <span style="width: 20%;">{{ item.hours }}</span>
+                            <span style="width: 14%; text-align: center;"*ngFor="let day of weekdays"><nb-checkbox></nb-checkbox></span>
+                        </nb-list-item>
+
+
+                    </nb-list>
+
+                    
+                </nb-card-body>
+                
+
+            </nb-card>
+
+        </div>
+    </div>
+
+</div>

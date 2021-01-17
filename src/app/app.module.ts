@@ -14,7 +14,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { ShiftsPageComponent } from './shifts-page/shifts-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
 
-import { NbThemeModule, NbLayoutModule, NbInputModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbInputModule, NbCheckboxModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbIconModule } from '@nebular/theme';
 import { NbSidebarModule } from '@nebular/theme';
@@ -58,6 +58,7 @@ import { SchedulerPageComponent } from './scheduler-page/scheduler-page.componen
     NbUserModule,
     NbAlertModule,
     NbActionsModule,
+    NbCheckboxModule,
     NbInputModule,
     NbWindowModule.forRoot(),
     NbProgressBarModule,
