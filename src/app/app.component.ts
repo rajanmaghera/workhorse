@@ -28,6 +28,11 @@ export class AppComponent {
       link: '/pay'
     },
     {
+      title: 'Manage Employees',
+      icon: 'people-outline',
+      link: '/employees'
+    },
+    {
       title: 'My Account',
       link: '/account',
       icon: 'person-outline',

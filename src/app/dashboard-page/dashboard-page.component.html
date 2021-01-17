@@ -1,46 +1,52 @@
 
 
-<nb-layout>
-<nb-layout-column>
-    
-    <h1>Welcome, John</h1>
+<div>
+
+    <div class="row"><div class="col-12"><h1>Welcome, John</h1> </div></div>
+    <div class="row">
+    <div class="col-xl-4">
+        
 
 
     
-    <nb-card><nb-card-body>
-        <p>Your next shift is ready for placement.</p>
-        <button nbButton status="primary">Schedule Now</button>
+        <nb-card><nb-card-body>
+            <p>Your next shift is ready for placement.</p>
+            <button nbButton status="primary">Schedule Now</button>
+    
+        </nb-card-body></nb-card> 
+    
+    </div>
+    <div class="col-xl-4">
+        <nb-alert status="success">
+            Your next shift is in
+            <h2 style="color: white; margin: 0.2em;">3 Days</h2>
+            Wednesday, January 20, 2021
+          </nb-alert>
 
-    </nb-card-body></nb-card> 
+    </div>
+    <div class="col-xl-4">
+        <nb-card size="small">
 
-</nb-layout-column>
-
-
-<nb-layout-column>
-    <nb-alert status="success">
-        Your next shift is in
-        <h2 style="color: white; margin: 0.2em;">3 Days</h2>
-        Wednesday, January 20, 2021
-      </nb-alert>
-
-</nb-layout-column>
-
-<nb-layout-column>
-    <nb-card size="small">
-
-        <nb-card-header>
-        On Shift
-        </nb-card-header>
-
-        <nb-list>
-            <nb-list-item *ngFor="let worker of workingToday">
-                <nb-user [name]="worker.name" [title]="worker.title"></nb-user>
-            </nb-list-item>
+            <nb-card-header>
+            On Shift
+            </nb-card-header>
+    
+            <nb-list>
+                <nb-list-item *ngFor="let worker of workingToday">
+                    <nb-user [name]="worker.name" [title]="worker.title"></nb-user>
+                </nb-list-item>
+    
+    
+            </nb-list>
+    
+    
+        </nb-card>
 
 
-        </nb-list>
+    </div>
+
+    </div>
 
 
-    </nb-card>
-</nb-layout-column>
-</nb-layout>
+</div>
+
