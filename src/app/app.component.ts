@@ -7,6 +7,7 @@ import { NbThemeService } from '@nebular/theme';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
 
   constructor(private themeService: NbThemeService, private sidebarService: NbSidebarService) { }
@@ -49,7 +50,7 @@ export class AppComponent {
 
   title = 'workhorse';
 
-   toggleTheme() {
+  toggleTheme() {
      if (this.themeService.currentTheme == 'default') {
       this.themeService.changeTheme('dark')
      } else {
@@ -57,9 +58,8 @@ export class AppComponent {
      }
    }
 
-   toggleSidebar() {
+  toggleSidebar() {
     this.sidebarService.toggle(true);
-
   }
    
 
