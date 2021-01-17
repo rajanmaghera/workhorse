@@ -1,6 +1,48 @@
 # Workhorse
 
+![Alt text](/screenshots/home.jpg)
+
+A workplace shift scheduler. Created by Youngwoo Seo, Tane Torres, and Rajan Maghera for HackED 2021. Based on the Angular and Nebular framework.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+
+## Inspiration
+
+This program schedules people into a work timetable. Employees can specify certain timeblocks they to or don't really want. As well, they can view their pay information, upcoming shift information, and check into shifts.
+
+## What it does
+
+This program schedules people into a work timetable. Employees can specify certain timeblocks they to or don't really want.
+
+## How we built it
+
+We built it on Angular and Nebular in Node.JS.
+
+## Challenges we ran into
+
+For everyone, this was the first time coding in Angular. For one of us, the first time in JS. Needless to say, this was a learning experience we are proud of.
+
+Our largest hurdle was connecting a database to store information. Our last used framework Django had all of this functionality built in. However, using Angular, we had to supply and connect our own. We ended up choosing MySQL as the service even though we barely got it working. In hindsight, another database such as mongo.db might have been easier to set up for us.
+
+## Accomplishments that we're proud of
+
+We used Nebular to create a (in our humble opinion) stunning looking webapp. 
+
+## What's next for Workhorse
+
+We'd like to continue working on this to hopefully implement it in production use in the real world. Some required tasks to reach that goal are:
+
+* Setting up authentication and security
+* Connecting form methods to DB
+* Connecting front-end elements to DB
+
+Some other tasks include:
+
+* Adding in (or writing) a proper calendar for the scheduler
+* Advancing the payment information fields
+* Import/export from .csv/other files
+* Profile pictures
+* and more!
 
 ## Development server
 
