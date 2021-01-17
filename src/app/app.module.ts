@@ -14,7 +14,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { ShiftsPageComponent } from './shifts-page/shifts-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
 
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbInputModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbIconModule } from '@nebular/theme';
 import { NbSidebarModule } from '@nebular/theme';
@@ -25,7 +25,10 @@ import { NbCardModule } from '@nebular/theme';
 import { NbUserModule } from '@nebular/theme';
 import { NbAlertModule } from '@nebular/theme';
 import { NbActionsModule } from '@nebular/theme';
-
+import { NbProgressBarModule } from '@nebular/theme';
+import { NbWindowModule } from '@nebular/theme';
+import { AddEmployeeFormComponent } from './add-employee-form/add-employee-form.component';
+import { SchedulerPageComponent } from './scheduler-page/scheduler-page.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { NbActionsModule } from '@nebular/theme';
     PaymentsPageComponent,
     DashboardPageComponent,
     ShiftsPageComponent,
-    AccountPageComponent
+    AccountPageComponent,
+    AddEmployeeFormComponent,
+    SchedulerPageComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +58,9 @@ import { NbActionsModule } from '@nebular/theme';
     NbUserModule,
     NbAlertModule,
     NbActionsModule,
+    NbInputModule,
+    NbWindowModule.forRoot(),
+    NbProgressBarModule,
     NbMenuModule.forRoot(),
     NbSidebarModule.forRoot(),
     AppRoutingModule

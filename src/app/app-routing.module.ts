@@ -4,6 +4,7 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
 import { ShiftsPageComponent } from './shifts-page/shifts-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
 import { EmployeePageComponent } from './employee-page/employee-page.component';
+import { SchedulerPageComponent } from './scheduler-page/scheduler-page.component';
 
 import { Routes, RouterModule } from '@angular/router';
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'shifts', component: ShiftsPageComponent },
   { path: 'account', component: AccountPageComponent },
   { path: 'employees', component: EmployeePageComponent},
+  { path: 'scheduler', component: SchedulerPageComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
 
 ];

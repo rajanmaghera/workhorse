@@ -1,30 +1,42 @@
-
-
 <div>
 
     <div class="row"><div class="col-12"><h1>Welcome, John</h1> </div></div>
+    <div class="row"><div class="col-12">
+        <nb-alert status="info">
+        <span style="width: 50%;"><h6 style="color: white; margin: 0.2em;">Current Shift</h6></span>
+        <nb-progress-bar [value]="50" status="primary" size="large"></nb-progress-bar> 
+        3h 17m left
+
+        </nb-alert>
+    
+    </div></div>
+
+    <div class="row"><div class="col-md-4">
+        <nb-alert status="info">
+        <h6 style="color: white; margin: 0.2em;">Your shift is about to begin.</h6> <button nbButton style="width: 30%; margin-left: 0.5em;">Check In</button> 
+    </nb-alert>
+    </div></div>
+
     <div class="row">
-    <div class="col-xl-4">
-        
+    <div class="col-md-4">
+     
+    <nb-card><nb-card-body>
+        <p>Your next shift is ready for placement.</p>
+        <button nbButton status="primary">Schedule Now</button>
 
-
-    
-        <nb-card><nb-card-body>
-            <p>Your next shift is ready for placement.</p>
-            <button nbButton status="primary">Schedule Now</button>
-    
-        </nb-card-body></nb-card> 
+    </nb-card-body></nb-card> 
     
     </div>
-    <div class="col-xl-4">
+    <div class="col-md-4">
         <nb-alert status="success">
             Your next shift is in
             <h2 style="color: white; margin: 0.2em;">3 Days</h2>
             Wednesday, January 20, 2021
+            <button nbButton style="margin-top: 0.5em;">See Schedule</button>
           </nb-alert>
 
     </div>
-    <div class="col-xl-4">
+    <div class="col-md-4">
         <nb-card size="small">
 
             <nb-card-header>

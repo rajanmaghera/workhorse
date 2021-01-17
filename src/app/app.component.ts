@@ -18,6 +18,11 @@ export class AppComponent {
       icon: 'home-outline',
     },
     {
+      title: 'Scheduler',
+      link: '/scheduler',
+      icon: 'calendar-outline',
+    },
+    {
       title: 'Shifts',
       link: '/shifts',
       icon: 'clock-outline',

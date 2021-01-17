@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NbWindowService } from '@nebular/theme';
+import { AddEmployeeFormComponent } from '../add-employee-form/add-employee-form.component';
 
 @Component({
   templateUrl: './employee-page.component.html',
@@ -15,7 +17,12 @@ export class EmployeePageComponent implements OnInit {
     { name: 'Ben Sullivan', title: 'Carpenter and photographer' },
   ];
   
-  constructor() { }
+  constructor(private windowService: NbWindowService) { }
+
+  openWindow() {
+    this.windowService.open(AddEmployeeFormComponent, { title: 'Add Employee' });
+
+  }
 
 
   ngOnInit(): void {
