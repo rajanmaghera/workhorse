@@ -12,27 +12,35 @@
     </div></div>
 
     <div class="row"><div class="col-md-4">
-        <nb-alert status="info">
-        <h6 style="color: white; margin: 0.2em;">Your shift is about to begin.</h6> <button nbButton style="width: 30%; margin-left: 0.5em;">Check In</button> 
-    </nb-alert>
+
     </div></div>
 
     <div class="row">
     <div class="col-md-4">
      
+        <nb-alert status="info">
+            <h6 style="color: white; margin: 0.2em;">Your shift is about to begin.</h6>
+             <button nbButton >Check In</button> 
+        </nb-alert>
     <nb-card><nb-card-body>
         <p>Your next shift is ready for placement.</p>
         <button nbButton status="primary">Schedule Now</button>
-
     </nb-card-body></nb-card> 
     
     </div>
     <div class="col-md-4">
         <nb-alert status="success">
             Your next shift is in
-            <h2 style="color: white; margin: 0.2em;">3 Days</h2>
-            Wednesday, January 20, 2021
+            <h2 style="color: white; margin: 0.2em;">3 days</h2>
+            Wednesday, January 20
             <button nbButton style="margin-top: 0.5em;">See Schedule</button>
+          </nb-alert>
+          <nb-alert status="primary">
+            Payment in
+            <h2 style="color: white; margin: 0.2em;">10 days</h2>
+            Wednesday, January 20
+            <button nbButton style="margin-top: 0.5em;">See Payments</button>
+
           </nb-alert>
 
     </div>
