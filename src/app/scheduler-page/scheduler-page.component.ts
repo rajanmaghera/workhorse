@@ -22,7 +22,9 @@ export class SchedulerPageComponent implements OnInit {
     'Tuesday',
     'Wednesday',
     'Thursday',
-    'Friday'
+    'Friday',
+    'Saturday',
+    'Sunday'
   ];
 
   checked = false;

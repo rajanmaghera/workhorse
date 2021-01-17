@@ -42,6 +42,9 @@ export class AppComponent {
       link: '/account',
       icon: 'person-outline',
     },
+    {
+    title: 'Log Out',
+    }
    ];
 
   title = 'workhorse';
