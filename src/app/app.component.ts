@@ -11,19 +11,22 @@ export class AppComponent {
   items: NbMenuItem[] = [
     {
       title: 'Dashboard',
-      link: '/',
+      link: '/home',
       icon: 'home-outline',
     },
     {
       title: 'Shifts',
+      link: '/shifts',
       icon: 'clock-outline',
     },
     {
       title: 'Payments',
       icon: 'credit-card-outline',
+      link: '/pay'
     },
     {
       title: 'My Account',
+      link: '/account',
       icon: 'person-outline',
     },
    ];

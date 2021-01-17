@@ -15,6 +15,10 @@ import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.
 import { NbButtonModule } from '@nebular/theme';
 import { NbMenuModule } from '@nebular/theme';
 import { EmployeePageComponent } from './employee-page/employee-page.component';
+import { PaymentsPageComponent } from './payments-page/payments-page.component';
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { ShiftsPageComponent } from './shifts-page/shifts-page.component';
+import { AccountPageComponent } from './account-page/account-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { EmployeePageComponent } from './employee-page/employee-page.component';
     ManagerComponent,
     TimetableComponent,
     NbSidebarToggleComponent,
-    EmployeePageComponent
+    EmployeePageComponent,
+    PaymentsPageComponent,
+    DashboardPageComponent,
+    ShiftsPageComponent,
+    AccountPageComponent
   ],
   imports: [
     BrowserModule,
