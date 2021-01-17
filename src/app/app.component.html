@@ -1,19 +1,20 @@
 <nb-layout>
 
   <nb-layout-header fixed>
-    <app-nb-sidebar-toggle></app-nb-sidebar-toggle><nb-icon icon="briefcase-outline" style="margin-right: 1em;"></nb-icon>  <h4>Workhorse</h4> 
+    <nb-actions size="small">
+      <nb-action icon="menu-outline" (click)="toggleSidebar()"></nb-action>
+      <nb-action icon="bulb-outline" (click)="toggleTheme()"></nb-action>
+    </nb-actions>
+
+     <h4>Workhorse</h4>
+     
   </nb-layout-header>
 
-  <nb-sidebar>  <nb-menu [items]="items">
-  </nb-menu></nb-sidebar>
 
-  <nb-layout-column>
-    <router-outlet></router-outlet>
-    
-  </nb-layout-column>
-
-  <nb-layout-footer fixed>
+<nb-layout-column> <router-outlet></router-outlet></nb-layout-column>
+  <nb-layout-footer>
   HackED 2021
   </nb-layout-footer>
-
+  <nb-sidebar>  <nb-menu [items]="items">
+  </nb-menu></nb-sidebar>
 </nb-layout>

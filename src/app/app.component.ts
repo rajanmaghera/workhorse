@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { NbMenuItem } from '@nebular/theme';
+import { Component, SystemJsNgModuleLoader } from '@angular/core';
+import { NbMenuItem, NbSidebarService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,8 @@ import { NbMenuItem } from '@nebular/theme';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(private themeService: NbThemeService, private sidebarService: NbSidebarService) { }
 
   items: NbMenuItem[] = [
     {
@@ -32,4 +35,19 @@ export class AppComponent {
    ];
 
   title = 'workhorse';
+
+   toggleTheme() {
+     if (this.themeService.currentTheme == 'default') {
+      this.themeService.changeTheme('dark')
+     } else {
+       this.themeService.changeTheme('default')
+     }
+   }
+
+   toggleSidebar() {
+    this.sidebarService.toggle(true);
+
+  }
+   
+
 }

@@ -6,19 +6,26 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ManagerComponent } from './manager/manager.component';
 import { TimetableComponent } from './timetable/timetable.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
-import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule } from '@nebular/theme';
-import { NbSidebarModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.component';
-import { NbButtonModule } from '@nebular/theme';
-import { NbMenuModule } from '@nebular/theme';
 import { EmployeePageComponent } from './employee-page/employee-page.component';
 import { PaymentsPageComponent } from './payments-page/payments-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { ShiftsPageComponent } from './shifts-page/shifts-page.component';
 import { AccountPageComponent } from './account-page/account-page.component';
+
+import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { NbIconModule } from '@nebular/theme';
+import { NbSidebarModule } from '@nebular/theme';
+import { NbButtonModule } from '@nebular/theme';
+import { NbMenuModule } from '@nebular/theme';
+import { NbListModule } from '@nebular/theme';
+import { NbCardModule } from '@nebular/theme';
+import { NbUserModule } from '@nebular/theme';
+import { NbAlertModule } from '@nebular/theme';
+import { NbActionsModule } from '@nebular/theme';
+
 
 @NgModule({
   declarations: [
@@ -41,6 +48,11 @@ import { AccountPageComponent } from './account-page/account-page.component';
     NbEvaIconsModule,
     NbIconModule,
     NbButtonModule,
+    NbListModule,
+    NbCardModule,
+    NbUserModule,
+    NbAlertModule,
+    NbActionsModule,
     NbMenuModule.forRoot(),
     NbSidebarModule.forRoot(),
     AppRoutingModule
