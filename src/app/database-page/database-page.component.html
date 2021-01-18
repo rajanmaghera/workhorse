@@ -1,0 +1,28 @@
+<p>database-page works!</p>
+
+<div class="row">
+    <div class="col-xl-8">
+
+        <nb-card>
+
+        <nb-list>
+            <nb-list-item *ngFor="let worker of Repdata">
+                <span style="width: 90%;"><nb-user [name]="worker.firstName + ' ' + worker.lastName" [title]="worker.role"></nb-user></span>
+                
+                <span style="width: auto;">
+                    <nb-actions size="small">
+                        <nb-action icon="edit-outline"></nb-action>
+                        <nb-action icon="info-outline"></nb-action>
+                      </nb-actions>
+                
+                </span>
+            </nb-list-item>
+            
+
+
+        </nb-list>
+
+
+    </nb-card>
+    </div>
+    </div>

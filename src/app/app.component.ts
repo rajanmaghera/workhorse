@@ -44,6 +44,10 @@ export class AppComponent {
       icon: 'person-outline',
     },
     {
+      title: 'Database Connection Test',
+      link: '/database'
+    },
+    {
     title: 'Log Out',
     }
    ];

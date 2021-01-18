@@ -29,6 +29,9 @@ import { NbProgressBarModule } from '@nebular/theme';
 import { NbWindowModule } from '@nebular/theme';
 import { AddEmployeeFormComponent } from './add-employee-form/add-employee-form.component';
 import { SchedulerPageComponent } from './scheduler-page/scheduler-page.component';
+import { DatabasePageComponent } from './database-page/database-page.component';
+import { CommonService } from './common.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { SchedulerPageComponent } from './scheduler-page/scheduler-page.componen
     ShiftsPageComponent,
     AccountPageComponent,
     AddEmployeeFormComponent,
-    SchedulerPageComponent
+    SchedulerPageComponent,
+    DatabasePageComponent
   ],
   imports: [
     BrowserModule,
@@ -64,9 +68,10 @@ import { SchedulerPageComponent } from './scheduler-page/scheduler-page.componen
     NbProgressBarModule,
     NbMenuModule.forRoot(),
     NbSidebarModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
