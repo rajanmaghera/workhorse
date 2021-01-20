@@ -24,8 +24,13 @@
     "@nebular/auth": "^7.0.0",
     "@nebular/eva-icons": "6.2.1",
     "@nebular/theme": "6.2.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.3",
     "eva-icons": "^1.1.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
