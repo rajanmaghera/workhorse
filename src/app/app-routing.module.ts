@@ -6,6 +6,17 @@ import { AccountPageComponent } from './account-page/account-page.component';
 import { EmployeePageComponent } from './employee-page/employee-page.component';
 import { SchedulerPageComponent } from './scheduler-page/scheduler-page.component';
 
+import {
+  NbAuthComponent,
+  NbLoginComponent,
+  NbRegisterComponent,
+  NbLogoutComponent,
+  NbRequestPasswordComponent,
+  NbResetPasswordComponent,
+} from '@nebular/auth';
+
+
+
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
@@ -15,7 +26,39 @@ const routes: Routes = [
   { path: 'account', component: AccountPageComponent },
   { path: 'employees', component: EmployeePageComponent},
   { path: 'scheduler', component: SchedulerPageComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+
+  {
+    path: 'auth',
+    component: NbAuthComponent,
+    children: [
+      {
+        path: '',
+        component: NbLoginComponent,
+      },
+      {
+        path: 'login',
+        component: NbLoginComponent,
+      },
+      {
+        path: 'register',
+        component: NbRegisterComponent,
+      },
+      {
+        path: 'logout',
+        component: NbLogoutComponent,
+      },
+      {
+        path: 'request-password',
+        component: NbRequestPasswordComponent,
+      },
+      {
+        path: 'reset-password',
+        component: NbResetPasswordComponent,
+      },
+    ],
+  },
+
 
 ];
 

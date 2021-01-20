@@ -29,6 +29,9 @@ import { NbProgressBarModule } from '@nebular/theme';
 import { NbWindowModule } from '@nebular/theme';
 import { AddEmployeeFormComponent } from './add-employee-form/add-employee-form.component';
 import { SchedulerPageComponent } from './scheduler-page/scheduler-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NbPasswordAuthStrategy, NbAuthModule } from '@nebular/auth';
+
 
 @NgModule({
   declarations: [
@@ -64,8 +67,19 @@ import { SchedulerPageComponent } from './scheduler-page/scheduler-page.componen
     NbProgressBarModule,
     NbMenuModule.forRoot(),
     NbSidebarModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
+    NbAuthModule.forRoot({
+      strategies: [
+        NbPasswordAuthStrategy.setup({
+          name: 'email',
+        }),
+      ],
+        forms: {},
+    }),
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
