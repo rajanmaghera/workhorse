@@ -13,7 +13,8 @@ export class DatabasePageComponent implements OnInit {
     valbutton= "Save";
 
   ngOnInit(): void {
-    this.newService.getUser().subscribe(data => this.Repdata = data)
+    this.newService.getEmployeeList().subscribe(data => this.Repdata = data)
+    console.log(this.Repdata)
   }
 
   onSave = function(user,isValid: boolean) {

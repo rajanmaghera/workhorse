@@ -7,7 +7,7 @@
 
         <nb-list>
             <nb-list-item *ngFor="let worker of Repdata">
-                <span style="width: 90%;"><nb-user [name]="worker.firstName + ' ' + worker.lastName" [title]="worker.role"></nb-user></span>
+                <span style="width: 90%;"><nb-user [name]="worker.first" [title]="worker.last"></nb-user></span>
                 
                 <span style="width: auto;">
                     <nb-actions size="small">

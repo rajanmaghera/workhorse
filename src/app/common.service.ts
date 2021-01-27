@@ -30,11 +30,17 @@ export class CommonService {
 
   saveUser(user){
     return this.http.post('http://localhost:8080/api/saveUser', user).pipe(catchError(this.handleError));
-}
-getUser(){
-  console.log("I wsa called")
-  return this.http.get('http://localhost:8080/api/getUser').pipe(catchError(this.handleError));
+  }
+  
+  getUser(){
+    console.log("I wsa called")
+    return this.http.get('http://localhost:8080/api/getUser').pipe(catchError(this.handleError));
+  }
 
-}
+  getEmployeeList(){
+    console.log("Getting employee list")
+    return this.http.get('http://localhost:4000/api/foobarGet').pipe(catchError(this.handleError))
+  }
+
 
 }
