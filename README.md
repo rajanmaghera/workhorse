@@ -1,69 +1,70 @@
-# Workhorse
+# Getting Started with Create React App
 
-![Alt text](/screenshots/home.jpg)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-A workplace shift scheduler. Created by Youngwoo Seo, Tane Torres, and Rajan Maghera for HackED 2021. Based on the Angular and Nebular framework.
+## Available Scripts
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
+In the project directory, you can run:
 
-## Inspiration
+### `npm start`
 
-This program schedules people into a work timetable. Employees can specify certain timeblocks they to or don't really want. As well, they can view their pay information, upcoming shift information, and check into shifts.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## What it does
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-This program schedules people into a work timetable. Employees can specify certain timeblocks they to or don't really want.
+### `npm test`
 
-## How we built it
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-We built it on Angular and Nebular in Node.JS.
+### `npm run build`
 
-## Challenges we ran into
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-For everyone, this was the first time coding in Angular. For one of us, the first time in JS. Needless to say, this was a learning experience we are proud of.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Our largest hurdle was connecting a database to store information. Our last used framework Django had all of this functionality built in. However, using Angular, we had to supply and connect our own. We ended up choosing MySQL as the service even though we barely got it working. In hindsight, another database such as mongo.db might have been easier to set up for us.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Accomplishments that we're proud of
+### `npm run eject`
 
-We used Nebular to create a (in our humble opinion) stunning looking webapp. 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## What's next for Workhorse
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-We'd like to continue working on this to hopefully implement it in production use in the real world. Some required tasks to reach that goal are:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-* Setting up authentication and security
-* Connecting form methods to DB
-* Connecting front-end elements to DB
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-Some other tasks include:
+## Learn More
 
-* Adding in (or writing) a proper calendar for the scheduler
-* Advancing the payment information fields
-* Import/export from .csv/other files
-* Profile pictures
-* and more!
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Development server
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Code Splitting
 
-## Code scaffolding
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Analyzing the Bundle Size
 
-## Build
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Making a Progressive Web App
 
-## Running unit tests
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Advanced Configuration
 
-## Running end-to-end tests
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Deployment
 
-## Further help
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
