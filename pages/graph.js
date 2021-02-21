@@ -22,9 +22,9 @@ function BookInfo() {
 
     return data.books.map(({title, author}) => (
         <ApolloProvider client={client}>
-        <div key={title}>
-            <p>Book Title: {title}</p>
-            <p>Book Author: {author}</p>
+        <div className="book-entry" key={title}>
+            <div className="book-title">{title}</div>
+            <div className="book-author">{author}</div>
         </div></ApolloProvider>
     ))
 }
@@ -32,7 +32,9 @@ function BookInfo() {
 export default function Graph() {
     return (
 <ApolloProvider client={client}>
-    <BookInfo />
+    <div className="book-list">
+      <BookInfo />
+    </div>
 
 </ApolloProvider>
     )
