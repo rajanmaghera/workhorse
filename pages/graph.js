@@ -1,4 +1,5 @@
 import { ApolloClient, InMemoryCache, gql, useQuery, ApolloProvider } from '@apollo/client'
+import {AddBookForm} from '../components/AddBookForm'
 
 const client = new ApolloClient({
     uri: 'http://localhost:4000/graphql',
@@ -21,20 +22,22 @@ function BookInfo() {
     if (error) return <p>Error :(</p>
 
     return data.books.map(({title, author}) => (
-        <ApolloProvider client={client}>
-        <div className="book-entry" key={title}>
+        <div className="book-entry shadow-lg" key={title}>
             <div className="book-title">{title}</div>
             <div className="book-author">{author}</div>
-        </div></ApolloProvider>
+        </div>
     ))
 }
 
 export default function Graph() {
     return (
 <ApolloProvider client={client}>
-    <div className="book-list">
+<AddBookForm />
+
+    <div className="book-list flex">
       <BookInfo />
     </div>
+
 
 </ApolloProvider>
     )
